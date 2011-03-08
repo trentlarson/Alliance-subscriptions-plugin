@@ -1,4 +1,26 @@
 Alliance Subscriptions PlugIn
 
-This should allow you to subscribe to a friend's Alliance share folder and get their changes automatically.
-It is fully functional and sometimes works, but it doesn't always schedule a download and I'm not sure why.
+This allows you to subscribe to a friend's Alliance share folder and get their changes automatically.
+
+STATUS
+
+It is fully functional and detects changes just fine; then it gets to the part where it should schedule
+a download and then... nothing.  Well, sometimes it actually works: if I set the last_any_modified field
+in the subscription setting then it'll usually download one or more of the files, so I know that the
+download code CAN work (eg. the ViewShareMDIWindow.download() approach).  But most often it gets to the 
+System.out where it's trying a download approach and then just fails to do the download.  Annoying!
+
+USAGE
+
+To add this plugin, go to View, then Plugins, and point to the jar file.
+
+To add a subscription, go to the Debug Console and enter a 'newfsub' command.  Here's the basic syntax:
+
+newfsub FRIEND-GUID FRIEND-SHARE FRIEND-SHARE-SUB-DIR MY-LOCAL-DIR 0
+
+Here's an example:
+
+newfsub 1643718002 alliance-on-trunk subscribe-to-this/ /Users/tlarson/dev/alliance/working-trunk2/working/sub-to-trunk 0
+
+You'll probably have to look in your settings.xml file to find your friend's GUID.
+

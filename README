@@ -12,6 +12,9 @@ System.out where it's trying a download approach and then just fails to do the d
 
 USAGE
 
+This is built to work with the latest trunk (r 235 at http://code.google.com/p/alliancep2pbeta).
+It may work work with the latest official release 1.0.6, but I haven't tried it.
+
 To add this plugin, go to View, then Plugins, and point to the jar file.
 
 To add a subscription, go to the Debug Console and enter a 'newfsub' command.  Here's the basic syntax:

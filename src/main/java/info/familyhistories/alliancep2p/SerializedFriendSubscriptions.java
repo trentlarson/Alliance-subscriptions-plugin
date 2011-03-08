@@ -15,6 +15,11 @@ import java.util.List;
 
 import org.alliance.core.CoreSubsystem;
 
+/**
+ * Use a file to store the array of subscribed folders.
+ * 
+ * You can remove the file to erase all the settings, and it'll be recreated blank.
+ */
 public class SerializedFriendSubscriptions implements FriendSubscriptionPersistence {
 	
 	private final String filename;

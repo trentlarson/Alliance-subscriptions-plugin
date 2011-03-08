@@ -93,6 +93,8 @@ public class FriendFileChangeDetectorPlugIn implements PlugIn {
     @Override
     public void init(CoreSubsystem _core) throws SQLException {
         this.core = _core;
+        
+        // I've tried each to see if they can get past this download problem; no success.
         //this.dbFriendSub = new DatabaseFriendSubscriptions(_core);
         this.dbFriendSub = new SerializedFriendSubscriptions(_core);
         

@@ -16,6 +16,8 @@ import org.alliance.core.CoreSubsystem;
 import org.alliance.core.file.h2database.DatabaseCore;
 
 /**
+ * Use the Alliance DB to store the subscription settings.
+ * 
  * All the DB operations seem to work.
  * However, the app often fails to download the files that I request for custom download.
  * Sometimes it downloads all; sometimes it downloads just one; sometimes none.

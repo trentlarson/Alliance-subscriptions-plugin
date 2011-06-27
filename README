@@ -4,11 +4,12 @@ This allows you to subscribe to a friend's Alliance share folder and get their c
 
 STATUS
 
-It is fully functional and detects changes just fine; then it gets to the part where it should schedule
+The functionality is written, and it detects changes just fine, but it gets to the part where it should schedule
 a download and then... nothing.  Well, sometimes it actually works: if I set the last_any_modified field
 in the subscription setting then it'll usually download one or more of the files, so I know that the
 download code CAN work (eg. the ViewShareMDIWindow.download() approach).  But most often it gets to the 
 System.out where it's trying a download approach and then just fails to do the download.  Annoying!
+Anyway, hopefully I'll get an answer on this issue: http://code.google.com/p/alliancep2pbeta/issues/detail?id=36
 
 USAGE
 
